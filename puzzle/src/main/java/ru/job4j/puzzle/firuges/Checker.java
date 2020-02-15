@@ -12,6 +12,8 @@ public class Checker implements Figure {
         return this.position;
     }
 
+    // проверка нельзя двигать по диагонали
+    // и только на соседнюю клетку +1
     @Override
     public Cell[] way(Cell source, Cell dest) {
         Cell[] steps = new Cell[0];
